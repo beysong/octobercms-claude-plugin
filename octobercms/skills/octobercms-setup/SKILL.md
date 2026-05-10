@@ -1,6 +1,8 @@
 ---
+name: octobercms-setup
 description: Initialize OctoberCMS development environment - select version and download documentation
 allowed-tools: Bash, Write, Read
+trigger: /octobercms:setup
 ---
 
 # OctoberCMS Setup

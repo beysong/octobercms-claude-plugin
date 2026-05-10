@@ -1,6 +1,8 @@
 ---
+name: octobercms-update-settings
 description: Update OctoberCMS plugin settings
 allowed-tools: Bash, Read, Edit
+trigger: /octobercms:update-settings
 ---
 
 # Update Settings

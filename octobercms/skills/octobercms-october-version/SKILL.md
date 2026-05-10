@@ -1,7 +1,9 @@
 ---
+name: octobercms-october-version
 description: Switch OctoberCMS documentation version without full re-setup
-argument-hint: <version: 1, 2, 3, or 4>
 allowed-tools: Bash, Write, Read, Edit
+trigger: /octobercms:october-version
+argument-hint: <version: 1, 2, 3, or 4>
 ---
 
 # Switch OctoberCMS Version
