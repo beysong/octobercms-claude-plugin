@@ -2,7 +2,8 @@
 name: octobercms-setup
 description: Initialize OctoberCMS development environment - select version and download documentation
 allowed-tools: Bash, Write, Read
-trigger: /octobercms:setup
+disable-model-invocation: true
+argument-hint: <version: 1, 2, 3, or 4>
 ---
 
 # OctoberCMS Setup

@@ -2,7 +2,7 @@
 name: octobercms-sync-docs
 description: Sync OctoberCMS documentation with the latest from GitHub
 allowed-tools: Bash, Write, Read, Edit
-trigger: /octobercms:sync-docs
+disable-model-invocation: true
 ---
 
 # Sync OctoberCMS Documentation

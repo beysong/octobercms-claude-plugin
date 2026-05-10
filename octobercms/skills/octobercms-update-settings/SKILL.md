@@ -2,7 +2,7 @@
 name: octobercms-update-settings
 description: Update OctoberCMS plugin settings
 allowed-tools: Bash, Read, Edit
-trigger: /octobercms:update-settings
+disable-model-invocation: true
 ---
 
 # Update Settings
