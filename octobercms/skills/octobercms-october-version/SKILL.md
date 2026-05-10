@@ -1,9 +1,8 @@
 ---
 name: octobercms-october-version
 description: Switch OctoberCMS documentation version without full re-setup
-allowed-tools: Bash, Write, Read, Edit
 disable-model-invocation: true
-argument-hint: <version: 1, 2, 3, or 4>
+argument-hint: <version: 1 2 3 or 4>
 ---
 
 # Switch OctoberCMS Version
@@ -16,7 +15,7 @@ argument-hint: <version: 1, 2, 3, or 4>
 
 ## Step 1: Get Target Version
 
-**If $ARGUMENTS provided:** Use that version (accept "4", "4.x", "3", "3.x", etc.)
+**If $ARGUMENTS provided:** Use that version (accept "4" "4.x" "3" "3.x" etc.)
 
 **If no arguments:** Ask user:
 ```
@@ -39,7 +38,7 @@ test -f .claude/octobercms-config.json && cat .claude/octobercms-config.json || 
 
 **If output is empty:** Show: `No OctoberCMS configuration found. Run /octobercms:setup first.` and stop.
 
-**If output contains JSON:** Check if already on requested version. If same version, show: `Already using version ${VERSION}.x` and stop.
+**If output contains JSON:** Check if already on requested version. If same version show: `Already using version ${VERSION}.x` and stop.
 
 ## Step 3: Check if Version Exists Globally
 

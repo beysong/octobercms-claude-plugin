@@ -1,9 +1,8 @@
 ---
 name: octobercms-setup
 description: Initialize OctoberCMS development environment - select version and download documentation
-allowed-tools: Bash, Write, Read
 disable-model-invocation: true
-argument-hint: <version: 1, 2, 3, or 4>
+argument-hint: <version: 1 2 3 or 4>
 ---
 
 # OctoberCMS Setup
@@ -12,7 +11,7 @@ argument-hint: <version: 1, 2, 3, or 4>
 1. Use the EXACT bash commands shown below - do NOT modify them
 2. Do NOT add `|| echo "..."` fallbacks to any command
 3. Empty output = file/command not found - interpret accordingly
-4. Show user-friendly messages based on results, not raw command output
+4. Show user-friendly messages based on results not raw command output
 5. Execute ALL steps in order (1-10). Do NOT skip any step.
 
 ## Step 1: Welcome Banner
@@ -55,7 +54,7 @@ Would you like to reconfigure?
 
 **Present Yes as the first option.**
 
-If user says **No**: skip Steps 3-7 (version, docs download, community answers, auto-sync) but **still run Step 8** (CLAUDE.md update). Then show `Configuration unchanged.` and stop.
+If user says **No**: skip Steps 3-7 (version docs download community answers auto-sync) but **still run Step 8** (CLAUDE.md update). Then show `Configuration unchanged.` and stop.
 
 **If no config:** Show: `Setting up OctoberCMS development environment...` and proceed through all steps.
 
@@ -66,7 +65,7 @@ Run this exact command (do NOT add echo fallbacks):
 php artisan october:about 2>/dev/null | grep "October CMS Version" || true
 ```
 
-**If output contains version number** (e.g., "4.0" or "3.6"):
+**If output contains version number** (e.g. "4.0" or "3.6"):
 - Extract major version (4.0.0 → 4)
 - Show friendly message:
   ```
@@ -74,8 +73,8 @@ php artisan october:about 2>/dev/null | grep "October CMS Version" || true
 
   Use version 4.x? (Y/n)
   ```
-- If user confirms (or just presses enter), use detected version
-- If user declines, show manual selection
+- If user confirms (or just presses enter) use detected version
+- If user declines show manual selection
 
 **If output is empty** (no version detected):
 - Show: `Could not auto-detect version.` then show manual selection
@@ -95,7 +94,7 @@ Which OctoberCMS version is this project using?
 Enter choice (1-4):
 ```
 
-Accept: "1", "2", "3", "4", "4.x", "3.x", etc.
+Accept: "1" "2" "3" "4" "4.x" "3.x" etc.
 
 ## Step 5: Download Documentation
 
@@ -173,7 +172,7 @@ git clone --depth 1 \
 
 Check if `.claude/CLAUDE.md` exists and read it.
 
-- **If it contains "octobercms-core":** Check if the version matches. If it says a different version than `${VERSION}.x`, replace that line with the correct version. Do NOT append a duplicate block.
+- **If it contains "octobercms-core":** Check if the version matches. If it says a different version than `${VERSION}.x` replace that line with the correct version. Do NOT append a duplicate block.
 - **If it exists but does NOT contain "octobercms-core":** Append the following block to the end (do NOT overwrite existing content).
 - **If it does not exist:** Create it with **only** the block below.
 
@@ -181,10 +180,10 @@ Check if `.claude/CLAUDE.md` exists and read it.
 
 # OctoberCMS Project
 
-This is an OctoberCMS ${VERSION}.x project. Always use the octobercms-core skill for any development questions, errors, or code generation.
+This is an OctoberCMS ${VERSION}.x project. Always use the octobercms-core skill for any development questions errors or code generation.
 ```
 
-**Do NOT ask for permission — just do it. Do NOT add any extra text, disclaimers, or comments. Write EXACTLY the block above, nothing more.**
+**Do NOT ask for permission — just do it. Do NOT add any extra text disclaimers or comments. Write EXACTLY the block above nothing more.**
 
 ## Step 9: Save Configuration
 
@@ -204,9 +203,9 @@ Then write the config file with the collected values:
 ```
 
 Adjust values based on user choices:
-- Auto-sync Auto: `auto_sync: true`, `auto_sync_mode: "auto"`
-- Auto-sync Notify: `auto_sync: true`, `auto_sync_mode: "notify"`
-- Auto-sync Off: `auto_sync: false`, `auto_sync_mode: "off"`
+- Auto-sync Auto: `auto_sync: true` `auto_sync_mode: "auto"`
+- Auto-sync Notify: `auto_sync: true` `auto_sync_mode: "notify"`
+- Auto-sync Off: `auto_sync: false` `auto_sync_mode: "off"`
 - Community answers Yes: `community_answers: true`
 - Community answers No: `community_answers: false`
 

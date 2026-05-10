@@ -1,7 +1,6 @@
 ---
 name: octobercms-sync-docs
 description: Sync OctoberCMS documentation with the latest from GitHub
-allowed-tools: Bash, Write, Read, Edit
 disable-model-invocation: true
 ---
 
@@ -54,7 +53,7 @@ git clone --depth 1 --single-branch --branch develop \
   https://github.com/octobercms/docs.git \
   /tmp/octobercms-docs-temp
 
-# For each installed version (e.g., 4.x):
+# For each installed version (e.g. 4.x):
 rm -rf ~/.claude/octobercms-docs/4.x
 cp -r /tmp/octobercms-docs-temp/4.x ~/.claude/octobercms-docs/
 
@@ -91,7 +90,7 @@ Show ONLY this message:
 Documentation updated!
 
   Project version: [version]
-  Synced versions: [versions, e.g., "4.x"]
+  Synced versions: [versions e.g. "4.x"]
   Community answers: [Updated/Not installed]
   Location: ~/.claude/octobercms-docs/
 ```

@@ -1,7 +1,6 @@
 ---
 name: octobercms-update-settings
 description: Update OctoberCMS plugin settings
-allowed-tools: Bash, Read, Edit
 disable-model-invocation: true
 ---
 
@@ -36,16 +35,16 @@ Auto-sync documentation updates?
   4. Cancel - Keep current settings
 ```
 
-**Auto is ALWAYS the recommended option**, regardless of current setting.
+**Auto is ALWAYS the recommended option** regardless of current setting.
 
 **If Cancel:** Show `Settings unchanged.` and stop.
 
 ## Step 3: Update Config
 
 Update the config file based on selection:
-- Auto: `auto_sync: true`, `auto_sync_mode: "auto"`
-- Notify: `auto_sync: true`, `auto_sync_mode: "notify"`
-- Off: `auto_sync: false`, `auto_sync_mode: "off"`
+- Auto: `auto_sync: true` `auto_sync_mode: "auto"`
+- Notify: `auto_sync: true` `auto_sync_mode: "notify"`
+- Off: `auto_sync: false` `auto_sync_mode: "off"`
 
 ## Step 4: Confirmation
 
