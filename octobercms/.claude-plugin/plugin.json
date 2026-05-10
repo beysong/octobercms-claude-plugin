@@ -14,9 +14,9 @@
   "skills": "./skills/",
   "hooks": "./hooks/hooks.json",
   "commands": [
-    "./commands/setup.md",
-    "./commands/sync-docs.md",
-    "./commands/october-version.md",
-    "./commands/update-settings.md"
+    { "name": "/octobercms:setup", "source": "./commands/setup.md" },
+    { "name": "/octobercms:sync-docs", "source": "./commands/sync-docs.md" },
+    { "name": "/octobercms:october-version", "source": "./commands/october-version.md" },
+    { "name": "/octobercms:update-settings", "source": "./commands/update-settings.md" }
   ]
 }
