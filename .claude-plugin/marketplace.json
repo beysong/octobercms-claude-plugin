@@ -1,8 +1,8 @@
 {
-  "name": "softappstudio",
+  "name": "beysong",
   "owner": {
-    "name": "Soft App Studio",
-    "email": "info@softappstudio.com"
+    "name": "Beysong",
+    "email": "beysong@example.com"
   },
   "metadata": {
     "description": "OctoberCMS development tools for Claude Code",
@@ -13,7 +13,7 @@
       "name": "octobercms",
       "source": {
         "source": "github",
-        "repo": "softappstudio/octobercms-claude-plugin",
+        "repo": "beysong/octobercms-claude-plugin",
         "path": "octobercms"
       }
     }
