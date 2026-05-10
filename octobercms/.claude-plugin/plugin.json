@@ -8,7 +8,7 @@
     "url": "https://github.com/softappstudio"
   },
   "homepage": "https://github.com/softappstudio/octobercms-claude-plugin",
-  "repository": "https://github.com/softappstudio/octobercms-claude-plugin",
+  "repository": "https://github.com/beysong/octobercms-claude-plugin",
   "license": "MIT",
   "keywords": ["octobercms", "laravel", "cms", "php"],
   "skills": "./skills/",
